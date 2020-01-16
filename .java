@@ -54,3 +54,157 @@ public class Userinput {
 		
 	}
 }
+
+
+
+
+
+import java.io.*;
+import java.util.Scanner;
+
+public class MidTermWritten {
+
+	public static void main(String[] args) throws IOException{
+
+		//reading in from a scanner
+		//import java.io*; to import complete package
+		// import java.io.file and import java.util.Scanner 
+		//File temp = new File("filename.txt");
+		//Scanner file = new Scanner("filename.txt");
+		// or 
+		//Scanner file2 = new Scanner(new File("filename.txt"));
+		
+		
+		//System.out.println("file.nextLine()");
+		
+		//initializing variables
+		//int is a whole number 
+		//int age = 10; 
+		//float is a floating point 
+		//int num; // declaring a variable
+		//num = 10; // assigning the variable to a value (initializing) 
+		//System.out.println(num);
+		
+		
+		//primitive type
+		byte a = 45;
+		short b = 345;
+		int c = 533;
+		long d = 5;
+		
+		float e = (float)(56.4);
+		double f = 5.1;
+		
+		char g ='$';
+		
+		System.out.println("DIE");
+		
+		boolean h = true;
+		//boolean i = false;
+		
+		
+		while (true){
+			Scanner consoleInput = new Scanner(System.in);
+			String input;
+			System.out.println("input a number");
+			input = consoleInput.nextLine();
+			System.out.println(input);
+			if (Integer.parseInt(input)==10 ){
+				System.out.println("congrats you are a EPIC SAUSE");
+				break;
+			}
+		}
+		
+		
+		
+		
+		boolean[] bestate = new boolean[100]; 
+		int counter = 0; 
+
+		for(int i = 0; i<100; i+=2){
+			counter++;
+			if (counter == 2){
+				bestate[i] = true;
+				counter = 0;
+
+			}		
+		}
+		
+
+		
+		if(h == true){
+			System.out.println("cum");
+			h=false; 
+		}
+		
+		// 8 primitive type 
+		// byte, short, int, long, float, double, char, boolean 
+		// dont use float, use double 
+		// char is characters, surround value with single quotes "" 
+		
+		//Arithmetic using variables
+		// + - addition, - Subtraction, * multiplication, / - division, % - mod or remainder 
+		
+		int z=2;
+		System.out.println(a%z);
+		
+		
+		//TYPE Convertion 
+		//int j =(int)3.4;
+		String A = "3.4";
+	//	char a = 'H';
+		
+		//string to int
+		//int i = Integer.parseInt("100");
+		//System.out.println(i);
+		
+		//int to string 
+		String str2 = Integer.toString(100);
+		System.out.print(str2);
+		
+		//string to double 
+		double D = Double.parseDouble("69.4");
+		System.out.println(D);
+		
+		//double to string 
+		String str69 = Double.toString(69.5);
+		System.out.println(str69);
+		
+		
+		
+		
+		
+		//Checking Strings, characters, particular characters in a String, numbers, etc. from input
+		
+		String s = "poopy";
+		s.charAt(3);
+		System.out.println(s.charAt(3));
+		
+		
+		//1D arrays 
+		String backpack[] = {"John","Jared"};
+		String CABT[] = {"Spoon","Fork","pencil"};
+		
+		for(int p=0; p<backpack.length; p+=1){
+			System.out.println("XDDDD:" + backpack[p]);
+		}
+		System.out.println(backpack[0]);
+		System.out.println(CABT[1]);
+		
+		
+		int[][] number8 = new int [10][10];
+		number8[0][0] = 100;
+	
+		//2D arrays 
+		int[][] number = new int [5][5];
+		number[0][0] = 100;
+		number[0][1] = 7000;
+		for (int o = 0; o<5;o++)
+		      for (int cum = 0; cum<5; cum++)
+		      System.out.println("cummm:"+number[o][cum]);
+		
+		System.out.println(number[0][0]);
+		System.out.println(number[0][1]);		
+	}
+}
+
